@@ -66,7 +66,12 @@ namespace Sitecore.Support.Commerce.XA.Foundation.CommerceEngine.Managers
                         .Where(item =>
                             item.CommerceSearchItemType == CommerceSearchItemType.SellableItem ||
                             item.CommerceSearchItemType == CommerceSearchItemType.Category)
-                        .Where(item => item.CommerceAncestorIds.Contains(startCategory))
+                    #region start modified part of the code
+                        //CommerceAncestorIds index field doesn't contain all ancestors. It contains only parent (direct ancestor).
+                        //_path field contains all ancestor, therefore the code has been modified to use Paths property
+                        //.Where(item => item.CommerceAncestorIds.Contains(startCategory))
+                        .Where(item => item.Paths.Contains(startCategory))
+                    #endregion end of the modified part of code
                         // .Where(item => item.CatalogEntityId == catalogName)
                         .Where(item => item.Language == this.CurrentLanguageName)
                         .Select(p => new CommerceSellableItemSearchResultItem()
