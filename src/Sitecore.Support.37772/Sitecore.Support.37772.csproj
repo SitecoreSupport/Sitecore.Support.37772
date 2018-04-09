@@ -44,15 +44,19 @@
     <Reference Include="Sitecore.Commerce.Engine.Connect, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\Sitecore.Commerce.Engine.Connect.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Commerce.XA.Foundation.CommerceEngine">
       <HintPath>..\..\lib\Sitecore.Commerce.XA.Foundation.CommerceEngine.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Commerce.XA.Foundation.Common">
       <HintPath>..\..\lib\Sitecore.Commerce.XA.Foundation.Common.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Commerce.XA.Foundation.Connect">
       <HintPath>..\..\lib\Sitecore.Commerce.XA.Foundation.Connect.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.ContentSearch, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SC.Sitecore.ContentSearch.9.0.1\lib\Sitecore.ContentSearch.dll</HintPath>
