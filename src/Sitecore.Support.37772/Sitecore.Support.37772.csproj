@@ -42,12 +42,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Sitecore.Commerce.Engine.Connect, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Commerce.Engine.Connect.2.1.54\lib\net462\Sitecore.Commerce.Engine.Connect.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Sitecore.Commerce.ServiceProxy, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Commerce.Engine.Connect.2.1.54\lib\net462\Sitecore.Commerce.ServiceProxy.dll</HintPath>
-      <Private>True</Private>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Sitecore.Commerce.Engine.Connect.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Commerce.XA.Foundation.CommerceEngine">
       <HintPath>..\..\lib\Sitecore.Commerce.XA.Foundation.CommerceEngine.dll</HintPath>
