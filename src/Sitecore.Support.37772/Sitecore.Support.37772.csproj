@@ -22,6 +22,7 @@
     <UseGlobalApplicationHostFile />
     <TargetFrameworkProfile />
     <LangVersion>6</LangVersion>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,33 +42,32 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Sitecore.Commerce.Engine.Connect, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Commerce.Engine.Connect.2.1.54\lib\net462\Sitecore.Commerce.Engine.Connect.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Sitecore.Commerce.Engine.Connect, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\COM.Sitecore.Commerce.Engine.Connect.9.0.2\lib\Sitecore.Commerce.Engine.Connect.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Commerce.ServiceProxy, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Commerce.Engine.Connect.2.1.54\lib\net462\Sitecore.Commerce.ServiceProxy.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Sitecore.Commerce.XA.Foundation.CommerceEngine, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\COM.Sitecore.Commerce.XA.Foundation.CommerceEngine.9.0.2\lib\Sitecore.Commerce.XA.Foundation.CommerceEngine.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Commerce.XA.Foundation.CommerceEngine">
-      <HintPath>..\..\lib\Sitecore.Commerce.XA.Foundation.CommerceEngine.dll</HintPath>
+    <Reference Include="Sitecore.Commerce.XA.Foundation.Common, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\COM.Sitecore.Commerce.XA.Foundation.Common.9.0.2\lib\Sitecore.Commerce.XA.Foundation.Common.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Commerce.XA.Foundation.Common">
-      <HintPath>..\..\lib\Sitecore.Commerce.XA.Foundation.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Commerce.XA.Foundation.Connect">
-      <HintPath>..\..\lib\Sitecore.Commerce.XA.Foundation.Connect.dll</HintPath>
+    <Reference Include="Sitecore.Commerce.XA.Foundation.Connect, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\COM.Sitecore.Commerce.XA.Foundation.Connect.9.0.2\lib\Sitecore.Commerce.XA.Foundation.Connect.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.ContentSearch, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SC.Sitecore.ContentSearch.9.0.1\lib\Sitecore.ContentSearch.dll</HintPath>
+      <HintPath>..\packages\SC.Sitecore.ContentSearch.9.0.2\lib\Sitecore.ContentSearch.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.ContentSearch.Linq, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SC.Sitecore.ContentSearch.Linq.9.0.1\lib\Sitecore.ContentSearch.Linq.dll</HintPath>
+      <HintPath>..\packages\SC.Sitecore.ContentSearch.Linq.9.0.2\lib\Sitecore.ContentSearch.Linq.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Kernel">
-      <HintPath>..\packages\SC.Sitecore.Kernel.9.0.1\lib\Sitecore.Kernel.dll</HintPath>
+    <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SC.Sitecore.Kernel.9.0.2\lib\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
